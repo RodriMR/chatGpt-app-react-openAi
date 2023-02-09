@@ -20,7 +20,7 @@ code {
 }
 .chatbox {
   flex: 1;
-
+  position: relative;
   background-color: #343541;
 }
 .side-menu-button {
@@ -38,13 +38,52 @@ code {
   padding-right: 12px;
 }
 .chat-input-holder {
+  padding: 24px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .chat-input-textarea {
   background: #40414f;
-  width: 100%;
+  width: 85%;
   border-radius: 5px;
   border: none;
   margin: 12px;
   outline: none;
-  box-shadow: 0 8px 4px 0 rgba(0,0,0,0.5s);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.chat-log {
+  text-align: left;
+}
+.chat-message.chatgpt {
+  background-color: #444654;
+}
+.avatar {
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.avatar.chatgpt {
+  background: #0da37f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.message {
+  padding-left: 40px;
+}
+.chat-message-center {
+  padding: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
